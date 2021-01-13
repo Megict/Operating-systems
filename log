@@ -1,0 +1,217 @@
+max@max-Swift:~/Рабочий стол/OS/КП/prog/yes=server$ strace -f -o traces/clit-tr.t ./ch.exe 127.0.0.1 8311 #запуск тест-клиента
+creating
+		 <<<1
+		 <<<5
+[119932] subscribing
+[119933] subscribing
+<tmp/tmrc|tmp/fmjh>
+<tmp/lgph|tmp/orjj>
+<tmp/tmrc|tmp/fmjh>
+<tmp/lgph|tmp/orjj>
+[119933] makingQ (ind 5)
+[119932] makingQ (ind 1)
+[119933] made
+[119933] sending to 5 (1924)
+[119933] reciving from 5
+[119932] made
+[119932] sending to 1 (1924)
+[119932] reciving from 1
+[119933] recived: 1924
+[119932] recived: 1924
+[119933] sending to 5 (300)
+[119933] reciving from 5
+[119932] sending to 1 (300)
+[119932] reciving from 1
+[119933] recived: 300
+[119933] makingQ (ind 10)
+[119932] recived: 300
+[119932] makingQ (ind 2)
+[119933] made
+[119933] sending to 10 (400)
+[119933] sending to 10 (310)
+[119932] made
+[119932] sending to 2 (400)
+[119932] sending to 2 (310)
+[119933] reciving from 10
+[119932] reciving from 2
+[119933] recived: 310
+[119933] reciving from 10
+[119932] recived: 310
+[119932] reciving from 2
+[119933] recived: 400
+[119933] reciving from 10
+[119932] recived: 400
+[119932] reciving from 2
+LAST TEST
+LAST TEST
+[119933] sending to 10 (sentTOother)
+[119932] reciving from 4
+[119932] recived: sentTOother
+max@max-Swift:~/Рабочий стол/OS/КП/prog/yes=server$ 
+
+max@max-Swift:~/Рабочий стол/OS/КП/prog/yes=server$ strace -f -o traces/serv-tr.t ./MSQserver.exe 8311 #запуск сервера
+will create OPR | maxLOGlen: 1
+operator activatrd |1|
+port: 8311
+server started
+retranslator activated
+retranslator activated
+operator| got ask | from: 119933
+operator ask: 1 | 0
+	sub added
+	respond written (7)
+ask handled
+operator| got ask | from: 119932
+operator ask: 1 | 0
+	sub added
+	respond written (9)
+ask handled
+operator| got ask | from: 119933
+operator ask: 4 | 5
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+operator ask: 4 | 1
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+operator ask: 2 | 5
+ask handled
+operator| got ask | from: 119933
+|5|-|1924|(1)
+|1|-|(0)
+operator ask: 3 | 5
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+operator ask: 2 | 1
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|1924|(1)
+operator ask: 3 | 1
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+operator ask: 2 | 5
+ask handled
+operator| got ask | from: 119933
+|5|-|300|(1)
+|1|-|(0)
+operator ask: 3 | 5
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+operator ask: 2 | 1
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|300|(1)
+operator ask: 3 | 1
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+operator ask: 4 | 10
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|(0)
+operator ask: 4 | 2
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+|10|-|(0)
+|2|-|(0)
+operator ask: 2 | 10
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+|10|-|400|(1)
+|2|-|(0)
+operator ask: 2 | 10
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|310|400|(2)
+|2|-|(0)
+operator ask: 2 | 2
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|310|400|(2)
+|2|-|400|(1)
+operator ask: 2 | 2
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+|10|-|310|400|(2)
+|2|-|310|400|(2)
+operator ask: 3 | 10
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|400|(1)
+|2|-|310|400|(2)
+operator ask: 3 | 2
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+|10|-|400|(1)
+|2|-|400|(1)
+operator ask: 3 | 10
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|(0)
+|2|-|400|(1)
+operator ask: 3 | 2
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+|10|-|(0)
+|2|-|(0)
+operator ask: 3 | 10
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|(0)
+|2|-|(0)
+operator ask: 3 | 2
+ask handled
+operator| got ask | from: 119933
+|5|-|(0)
+|1|-|(0)
+|10|-|(0)
+|2|-|(0)
+operator ask: 2 | 10
+ask handled
+operator| got ask | from: 119932
+|5|-|(0)
+|1|-|(0)
+|10|-|sentTOother|(1)
+|2|-|(0)
+operator ask: 3 | 10
+ask handled
+^C
+max@max-Swift:~/Рабочий стол/OS/КП/prog/yes=server$ 
+
+-----------
+[2]: 310 400 
+[10]: 310 400 sentTOother 
+-----------
