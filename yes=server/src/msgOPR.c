@@ -316,6 +316,7 @@ int CreateQueue(msQ* queue, int maxlen) { //принимается указат�
     char* globalFIF;
 
     char nst[9] = "tmp/";
+    system("mkdir tmp");
     char* gen = nameGenerator(3*getpid());
     strncat(nst,gen,4);
     free(gen);
@@ -446,11 +447,11 @@ int makeQ(msQ* queue,int QID, int logged) {
         //1 - такой идентефикатор уже есть
 }
 
-int sendMSG(msQ* queue, msg* item, int senderLid, int QID) {
+int sendMSG(msQ* queue, msg* item, int QID) {
     request qCall; //эта структура будет отправлена оператору
 
     qCall.action = 2;
-    qCall.localID = senderLid;
+    qCall.localID = getpid();
     qCall.Qid = QID;
     strcpy(qCall.localIN,"00000000"); //исключительно чтобы valgrind не ругался
     strcpy(qCall.localOUT,"00000000");
@@ -465,10 +466,10 @@ int sendMSG(msQ* queue, msg* item, int senderLid, int QID) {
     return 0;
 }
 
-int getMSG(msQ* queue, msg* item, int senderLid, int QID) {
+int getMSG(msQ* queue, msg* item, int QID) {
     request qCall; //эта структура будет отправлена оператору
     qCall.action = 3;
-    qCall.localID = senderLid;
+    qCall.localID = getpid();
     qCall.Qid = QID;
     strcpy(qCall.localIN,"00000000"); //исключительно чтобы valgrind не ругался
     strcpy(qCall.localOUT,"00000000");
