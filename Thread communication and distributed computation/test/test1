@@ -1,0 +1,24 @@
+create 1
+freze 1
+exec 1 start
+freze 1
+exec 1 time
+exec 1 stop 
+exec 1 time
+exec 1 time
+create 2 
+freze 1
+exec 2 start 
+exec 1 start
+exec 1 time 
+exec 2 time 
+exec 1 time 
+exec 2 time 
+exec 1 time 
+exec 2 time 
+exec 1 stop
+exec 2 stop
+ping 1 
+ping 2
+remove 1
+q

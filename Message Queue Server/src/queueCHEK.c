@@ -73,7 +73,7 @@ int main(int argc,char** argv) {
     
     printf("[%d] makingQ (ind %d)\n",getpid(),mn*2);
 
-    if(0 != makeQ(&mainQ,2*mn,1)) {
+    if(0 != makeQ(&mainQ,2*mn,1)) { //очереди с индексами 2 и 10 - логируемые.
         printf("[%d] error making\n",getpid());
     }
     else {
@@ -85,7 +85,7 @@ int main(int argc,char** argv) {
     printf("[%d] sending to %d (%s)\n",getpid(),mn*2,ms->content);
     sendMSG(&mainQ,ms,myID,2*mn);
 
-    ms->priority = 8;
+    ms->priority = 8; //сообщение "310" было отправлено позже "400", однако у него больше приоритет. Оно должно быть принято первым
     strcpy(ms->content,"310");
     printf("[%d] sending to %d (%s)\n",getpid(),mn*2,ms->content);
     sendMSG(&mainQ,ms,myID,2*mn);
@@ -121,7 +121,5 @@ int main(int argc,char** argv) {
         printf("[%d] recived: %s\n",getpid(),msGOT->content);
     }
 
-    //sleep(1);
-    //kill(oprPid,SIGTERM);
     return 0;
 }

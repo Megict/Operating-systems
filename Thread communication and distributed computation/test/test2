@@ -1,0 +1,7 @@
+create 1
+freze 1
+exec 1 start
+freze 1
+exec 1 stop 
+exec 1 time
+q

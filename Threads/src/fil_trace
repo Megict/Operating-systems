@@ -1,0 +1,391 @@
+147912 12:47:35.703929 execve("./exetry.out", ["./exetry.out"], 0x7ffeb10b7208 /* 47 vars */) = 0
+147912 12:47:35.708011 brk(NULL)        = 0x5637a7628000
+147912 12:47:35.708067 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffda54a3fd0) = -1 EINVAL (Недопустимый аргумент)
+147912 12:47:35.708279 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+147912 12:47:35.708344 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+147912 12:47:35.708390 fstat(3, {st_mode=S_IFREG|0644, st_size=77941, ...}) = 0
+147912 12:47:35.708433 mmap(NULL, 77941, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efebd450000
+147912 12:47:35.708474 close(3)         = 0
+147912 12:47:35.708521 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+147912 12:47:35.708564 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+147912 12:47:35.708609 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+147912 12:47:35.708649 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+147912 12:47:35.708689 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0cBR\340\305\370\2609W\242\345)q\235A\1"..., 68, 880) = 68
+147912 12:47:35.708728 fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+147912 12:47:35.708768 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efebd44e000
+147912 12:47:35.708813 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+147912 12:47:35.708854 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+147912 12:47:35.708893 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0cBR\340\305\370\2609W\242\345)q\235A\1"..., 68, 880) = 68
+147912 12:47:35.708932 mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efebd25c000
+147912 12:47:35.708972 mprotect(0x7efebd281000, 1847296, PROT_NONE) = 0
+147912 12:47:35.709017 mmap(0x7efebd281000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7efebd281000
+147912 12:47:35.709063 mmap(0x7efebd3f9000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7efebd3f9000
+147912 12:47:35.709106 mmap(0x7efebd444000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7efebd444000
+147912 12:47:35.709155 mmap(0x7efebd44a000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efebd44a000
+147912 12:47:35.709205 close(3)         = 0
+147912 12:47:35.709262 arch_prctl(ARCH_SET_FS, 0x7efebd44f540) = 0
+147912 12:47:35.709367 mprotect(0x7efebd444000, 12288, PROT_READ) = 0
+147912 12:47:35.709416 mprotect(0x5637a71f5000, 4096, PROT_READ) = 0
+147912 12:47:35.709460 mprotect(0x7efebd491000, 4096, PROT_READ) = 0
+147912 12:47:35.709500 munmap(0x7efebd450000, 77941) = 0
+147912 12:47:35.709617 write(1, "Input two filenames\nthen input s"..., 54) = 54
+147912 12:47:35.709854 read(0, "f", 1)  = 1
+147912 12:47:35.715721 read(0, "i", 1)  = 1
+147912 12:47:35.715769 read(0, "l", 1)  = 1
+147912 12:47:35.715810 read(0, "e", 1)  = 1
+147912 12:47:35.715850 read(0, "_", 1)  = 1
+147912 12:47:35.715890 read(0, "a", 1)  = 1
+147912 12:47:35.715930 read(0, "\n", 1) = 1
+147912 12:47:35.715970 read(0, "f", 1)  = 1
+147912 12:47:35.716009 read(0, "i", 1)  = 1
+147912 12:47:35.716049 read(0, "l", 1)  = 1
+147912 12:47:35.716088 read(0, "e", 1)  = 1
+147912 12:47:35.716128 read(0, "_", 1)  = 1
+147912 12:47:35.716168 read(0, "b", 1)  = 1
+147912 12:47:35.716207 read(0, " ", 1)  = 1
+147912 12:47:35.716246 read(0, "\n", 1) = 1
+147912 12:47:35.716293 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_TRUNC, 0660) = 3
+147912 12:47:35.716385 write(3, "This is file one\n(even)\n\n", 25) = 25
+147912 12:47:35.716439 close(3)         = 0
+147912 12:47:35.716512 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_TRUNC, 0660) = 3
+147912 12:47:35.716581 write(3, "This is file two\n(odd)\n\n", 24) = 24
+147912 12:47:35.716636 close(3)         = 0
+147912 12:47:35.716693 pipe([3, 4])     = 0
+147912 12:47:35.716764 write(1, "initiating process separation\n", 30) = 30
+147912 12:47:35.721493 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7efebd44f810) = 147913
+147912 12:47:35.721852 pipe([5, 6])     = 0
+147912 12:47:35.721939 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7efebd44f810) = 147914
+147912 12:47:35.722118 write(1, "parent: It's parent\n", 20) = 20
+147912 12:47:35.722394 read(0, "a", 1)  = 1
+147912 12:47:35.727865 read(0, "s", 1)  = 1
+147912 12:47:35.727930 read(0, "d", 1)  = 1
+147912 12:47:35.727970 read(0, "\n", 1) = 1
+147912 12:47:35.728012 write(6, "asd\0", 4) = 4
+147912 12:47:35.728062 read(0, "a", 1)  = 1
+147912 12:47:35.728105 read(0, "s", 1)  = 1
+147912 12:47:35.728150 read(0, "d", 1)  = 1
+147912 12:47:35.728199 read(0, "f", 1)  = 1
+147912 12:47:35.728246 read(0, "d", 1)  = 1
+147912 12:47:35.728299 read(0, "\n", 1) = 1
+147912 12:47:35.728352 write(6, "asdfd\0", 6) = 6
+147912 12:47:35.728404 read(0, "f", 1)  = 1
+147912 12:47:35.728451 read(0, "s", 1)  = 1
+147912 12:47:35.728497 read(0, "a", 1)  = 1
+147912 12:47:35.728543 read(0, "f", 1)  = 1
+147912 12:47:35.728595 read(0, "a", 1)  = 1
+147912 12:47:35.728643 read(0, "a", 1)  = 1
+147912 12:47:35.728696 read(0, "a", 1)  = 1
+147912 12:47:35.728744 read(0, "a", 1)  = 1
+147912 12:47:35.728791 read(0, "a", 1)  = 1
+147912 12:47:35.728839 read(0, "a", 1)  = 1
+147912 12:47:35.728887 read(0, "\n", 1) = 1
+147912 12:47:35.728935 write(4, "fsafaaaaaa\0", 11) = 11
+147912 12:47:35.728988 read(0, "a", 1)  = 1
+147912 12:47:35.729034 read(0, "s", 1)  = 1
+147912 12:47:35.729080 read(0, "a", 1)  = 1
+147912 12:47:35.729125 read(0, "a", 1)  = 1
+147912 12:47:35.729175 read(0, "a", 1)  = 1
+147912 12:47:35.729221 read(0, "a", 1)  = 1
+147912 12:47:35.729264 read(0, "a", 1)  = 1
+147912 12:47:35.729307 read(0, "a", 1)  = 1
+147912 12:47:35.729351 read(0, "a", 1)  = 1
+147912 12:47:35.729398 read(0, "a", 1)  = 1
+147912 12:47:35.729445 read(0, "a", 1)  = 1
+147912 12:47:35.729490 read(0, "\n", 1) = 1
+147912 12:47:35.729539 write(6, "asaaaaaaaaa\0", 12) = 12
+147912 12:47:35.729590 read(0, "a", 1)  = 1
+147912 12:47:35.729637 read(0, "d", 1)  = 1
+147912 12:47:35.729684 read(0, "s", 1)  = 1
+147912 12:47:35.729732 read(0, "\n", 1) = 1
+147912 12:47:35.729781 write(6, "ads\0", 4) = 4
+147912 12:47:35.729828 read(0, "", 1)   = 0
+147912 12:47:35.729874 write(4, "\0", 1) = 1
+147912 12:47:35.729920 write(4, "\1", 1) = 1
+147912 12:47:35.729966 write(6, "\1", 1) = 1
+147912 12:47:35.730012 close(3)         = 0
+147912 12:47:35.730055 close(4)         = 0
+147912 12:47:35.730096 close(5)         = 0
+147912 12:47:35.730140 close(6)         = 0
+147912 12:47:35.730182 write(1, "parent: stop\n", 13) = 13
+147912 12:47:35.730299 exit_group(0)    = ?
+147912 12:47:35.730460 +++ exited with 0 +++
+147913 12:47:35.731796 execve("chid_proc_one.out", ["file_a", "\3"], 0x7ffda54a40b8 /* 47 vars */ <unfinished ...>
+147914 12:47:35.739937 execve("chid_proc_two.out", ["file_b ", "\5"], 0x7ffda54a40b8 /* 47 vars */ <unfinished ...>
+147913 12:47:35.740629 <... execve resumed> ) = 0
+147913 12:47:35.740836 brk(NULL)        = 0x55f69655a000
+147913 12:47:35.743782 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcc3de6920) = -1 EINVAL (Недопустимый аргумент)
+147913 12:47:35.743894 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+147913 12:47:35.744430 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5
+147913 12:47:35.747775 fstat(5, {st_mode=S_IFREG|0644, st_size=77941, ...}) = 0
+147913 12:47:35.747844 mmap(NULL, 77941, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7fc779bf2000
+147913 12:47:35.747892 close(5)         = 0
+147913 12:47:35.747953 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 5
+147913 12:47:35.748009 read(5, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+147913 12:47:35.748059 pread64(5, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+147913 12:47:35.754954 pread64(5, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+147913 12:47:35.755065 pread64(5, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0cBR\340\305\370\2609W\242\345)q\235A\1"..., 68, 880) = 68
+147913 12:47:35.755116 fstat(5, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+147913 12:47:35.755169 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc779bf0000
+147913 12:47:35.755236 pread64(5, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+147913 12:47:35.755386 pread64(5, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+147913 12:47:35.755434 pread64(5, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0cBR\340\305\370\2609W\242\345)q\235A\1"..., 68, 880) = 68
+147913 12:47:35.755477 mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7fc7799fe000
+147913 12:47:35.755525 mprotect(0x7fc779a23000, 1847296, PROT_NONE) = 0
+147913 12:47:35.755576 mmap(0x7fc779a23000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x25000) = 0x7fc779a23000
+147913 12:47:35.755628 mmap(0x7fc779b9b000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x19d000) = 0x7fc779b9b000
+147913 12:47:35.755681 mmap(0x7fc779be6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x1e7000) = 0x7fc779be6000
+147913 12:47:35.755740 mmap(0x7fc779bec000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc779bec000
+147913 12:47:35.755795 close(5)         = 0
+147913 12:47:35.755854 arch_prctl(ARCH_SET_FS, 0x7fc779bf1540 <unfinished ...>
+147914 12:47:35.755880 <... execve resumed> ) = 0
+147914 12:47:35.755936 brk(NULL <unfinished ...>
+147913 12:47:35.755958 <... arch_prctl resumed> ) = 0
+147913 12:47:35.756039 mprotect(0x7fc779be6000, 12288, PROT_READ <unfinished ...>
+147914 12:47:35.756063 <... brk resumed> ) = 0x5611a4bce000
+147914 12:47:35.756089 arch_prctl(0x3001 /* ARCH_??? */, 0x7fffa842fe40) = -1 EINVAL (Недопустимый аргумент)
+147914 12:47:35.756154 access("/etc/ld.so.preload", R_OK <unfinished ...>
+147913 12:47:35.756191 <... mprotect resumed> ) = 0
+147914 12:47:35.756217 <... access resumed> ) = -1 ENOENT (Нет такого файла или каталога)
+147913 12:47:35.756247 mprotect(0x55f69583f000, 4096, PROT_READ <unfinished ...>
+147914 12:47:35.756272 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
+147913 12:47:35.756324 <... mprotect resumed> ) = 0
+147913 12:47:35.756351 mprotect(0x7fc779c33000, 4096, PROT_READ <unfinished ...>
+147914 12:47:35.756375 fstat(7, {st_mode=S_IFREG|0644, st_size=77941, ...}) = 0
+147913 12:47:35.756422 <... mprotect resumed> ) = 0
+147914 12:47:35.756444 mmap(NULL, 77941, PROT_READ, MAP_PRIVATE, 7, 0) = 0x7f19fd46c000
+147913 12:47:35.756485 munmap(0x7fc779bf2000, 77941 <unfinished ...>
+147914 12:47:35.756508 close(7 <unfinished ...>
+147913 12:47:35.756546 <... munmap resumed> ) = 0
+147914 12:47:35.756568 <... close resumed> ) = 0
+147914 12:47:35.756601 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+147913 12:47:35.756713 write(1, "It's child one\n", 15 <unfinished ...>
+147914 12:47:35.756748 <... openat resumed> ) = 7
+147914 12:47:35.756770 read(7, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+147914 12:47:35.756820 pread64(7, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+147914 12:47:35.756869 pread64(7, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+147914 12:47:35.756909 pread64(7, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0cBR\340\305\370\2609W\242\345)q\235A\1"..., 68, 880) = 68
+147914 12:47:35.756948 fstat(7, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+147914 12:47:35.756988 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f19fd46a000
+147914 12:47:35.757034 pread64(7, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+147914 12:47:35.757074 pread64(7, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+147914 12:47:35.757120 pread64(7,  <unfinished ...>
+147913 12:47:35.757152 <... write resumed> ) = 15
+147914 12:47:35.757174 <... pread64 resumed> "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0cBR\340\305\370\2609W\242\345)q\235A\1"..., 68, 880) = 68
+147914 12:47:35.757201 mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 7, 0) = 0x7f19fd278000
+147913 12:47:35.757243 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.757271 mprotect(0x7f19fd29d000, 1847296, PROT_NONE <unfinished ...>
+147913 12:47:35.757298 <... openat resumed> ) = 5
+147914 12:47:35.757327 <... mprotect resumed> ) = 0
+147913 12:47:35.757350 read(3,  <unfinished ...>
+147914 12:47:35.757371 mmap(0x7f19fd29d000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0x25000 <unfinished ...>
+147913 12:47:35.757396 <... read resumed> "f", 1) = 1
+147914 12:47:35.757429 <... mmap resumed> ) = 0x7f19fd29d000
+147913 12:47:35.757453 close(5)         = 0
+147913 12:47:35.757490 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.757516 mmap(0x7f19fd415000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0x19d000 <unfinished ...>
+147913 12:47:35.757543 <... openat resumed> ) = 5
+147914 12:47:35.757570 <... mmap resumed> ) = 0x7f19fd415000
+147913 12:47:35.757593 read(3, "s", 1)  = 1
+147914 12:47:35.757633 mmap(0x7f19fd460000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0x1e7000 <unfinished ...>
+147913 12:47:35.757658 close(5 <unfinished ...>
+147914 12:47:35.757686 <... mmap resumed> ) = 0x7f19fd460000
+147913 12:47:35.757709 <... close resumed> ) = 0
+147913 12:47:35.757731 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.757762 mmap(0x7f19fd466000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+147913 12:47:35.757790 <... openat resumed> ) = 5
+147913 12:47:35.757813 read(3,  <unfinished ...>
+147914 12:47:35.757839 <... mmap resumed> ) = 0x7f19fd466000
+147913 12:47:35.757862 <... read resumed> "a", 1) = 1
+147913 12:47:35.757886 close(5 <unfinished ...>
+147914 12:47:35.757917 close(7 <unfinished ...>
+147913 12:47:35.757939 <... close resumed> ) = 0
+147913 12:47:35.757960 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660) = 5
+147914 12:47:35.758002 <... close resumed> ) = 0
+147914 12:47:35.758045 arch_prctl(ARCH_SET_FS, 0x7f19fd46b540 <unfinished ...>
+147913 12:47:35.758068 read(3, "f", 1)  = 1
+147913 12:47:35.758108 close(5)         = 0
+147913 12:47:35.758144 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660) = 5
+147914 12:47:35.758186 <... arch_prctl resumed> ) = 0
+147914 12:47:35.758264 mprotect(0x7f19fd460000, 12288, PROT_READ <unfinished ...>
+147913 12:47:35.758289 read(3, "a", 1)  = 1
+147913 12:47:35.758328 close(5)         = 0
+147913 12:47:35.758364 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660) = 5
+147913 12:47:35.758406 read(3, "a", 1)  = 1
+147913 12:47:35.758445 close(5)         = 0
+147913 12:47:35.758480 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660) = 5
+147913 12:47:35.758521 read(3, "a", 1)  = 1
+147913 12:47:35.758559 close(5 <unfinished ...>
+147914 12:47:35.758585 <... mprotect resumed> ) = 0
+147913 12:47:35.758607 <... close resumed> ) = 0
+147913 12:47:35.758628 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.758658 mprotect(0x5611a42d3000, 4096, PROT_READ <unfinished ...>
+147913 12:47:35.758683 <... openat resumed> ) = 5
+147913 12:47:35.758704 read(3,  <unfinished ...>
+147914 12:47:35.758728 <... mprotect resumed> ) = 0
+147913 12:47:35.758749 <... read resumed> "a", 1) = 1
+147913 12:47:35.758774 close(5 <unfinished ...>
+147914 12:47:35.758800 mprotect(0x7f19fd4ad000, 4096, PROT_READ <unfinished ...>
+147913 12:47:35.758822 <... close resumed> ) = 0
+147913 12:47:35.758844 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.758872 <... mprotect resumed> ) = 0
+147913 12:47:35.758897 <... openat resumed> ) = 5
+147914 12:47:35.758926 munmap(0x7f19fd46c000, 77941 <unfinished ...>
+147913 12:47:35.758948 read(3,  <unfinished ...>
+147914 12:47:35.758988 <... munmap resumed> ) = 0
+147913 12:47:35.759010 <... read resumed> "a", 1) = 1
+147913 12:47:35.759035 close(5)         = 0
+147913 12:47:35.759070 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660) = 5
+147914 12:47:35.759181 write(1, "It's child two\n", 15 <unfinished ...>
+147913 12:47:35.759211 read(3, "a", 1)  = 1
+147913 12:47:35.759250 close(5)         = 0
+147913 12:47:35.759290 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660) = 5
+147913 12:47:35.759334 read(3, "\0", 1) = 1
+147913 12:47:35.759372 write(1, "one: string got\n\0", 17) = 17
+147913 12:47:35.759417 write(1, "one: result written\n", 20) = 20
+147913 12:47:35.759546 write(5, "aaaaaafasf", 10) = 10
+147914 12:47:35.759658 <... write resumed> ) = 15
+147913 12:47:35.759697 write(5, "\n", 1 <unfinished ...>
+147914 12:47:35.759726 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147913 12:47:35.759757 <... write resumed> ) = 1
+147914 12:47:35.759781 <... openat resumed> ) = 7
+147913 12:47:35.759803 close(5 <unfinished ...>
+147914 12:47:35.759825 read(5,  <unfinished ...>
+147913 12:47:35.759848 <... close resumed> ) = 0
+147914 12:47:35.759870 <... read resumed> "a", 1) = 1
+147913 12:47:35.759895 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.759921 close(7 <unfinished ...>
+147913 12:47:35.759945 <... openat resumed> ) = 5
+147914 12:47:35.759967 <... close resumed> ) = 0
+147913 12:47:35.759988 read(3,  <unfinished ...>
+147914 12:47:35.760010 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147913 12:47:35.760036 <... read resumed> "\0", 1) = 1
+147914 12:47:35.760062 <... openat resumed> ) = 7
+147913 12:47:35.760084 write(1, "one: string got\n\0", 17 <unfinished ...>
+147914 12:47:35.760109 read(5, "s", 1)  = 1
+147914 12:47:35.760229 close(7 <unfinished ...>
+147913 12:47:35.760287 <... write resumed> ) = 17
+147913 12:47:35.760312 write(1, "one: result written\n", 20 <unfinished ...>
+147914 12:47:35.760339 <... close resumed> ) = 0
+147914 12:47:35.760361 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147913 12:47:35.760476 <... write resumed> ) = 20
+147913 12:47:35.760502 write(5, "", 0 <unfinished ...>
+147914 12:47:35.760526 read(5,  <unfinished ...>
+147913 12:47:35.760547 <... write resumed> ) = 0
+147914 12:47:35.760568 <... read resumed> "d", 1) = 1
+147913 12:47:35.760592 write(5, "\n", 1 <unfinished ...>
+147914 12:47:35.760617 close(7 <unfinished ...>
+147913 12:47:35.760641 <... write resumed> ) = 1
+147914 12:47:35.760661 <... close resumed> ) = 0
+147914 12:47:35.760682 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147913 12:47:35.760709 close(5 <unfinished ...>
+147914 12:47:35.760733 <... openat resumed> ) = 7
+147913 12:47:35.760755 <... close resumed> ) = 0
+147913 12:47:35.760776 openat(AT_FDCWD, "file_a", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147914 12:47:35.760802 read(5,  <unfinished ...>
+147913 12:47:35.760826 <... openat resumed> ) = 5
+147914 12:47:35.760847 <... read resumed> "\0", 1) = 1
+147914 12:47:35.760871 write(1, "two: string is got\n", 19 <unfinished ...>
+147913 12:47:35.760896 read(3, "\1", 1) = 1
+147914 12:47:35.761009 <... write resumed> ) = 19
+147913 12:47:35.761035 close(3 <unfinished ...>
+147914 12:47:35.761057 write(1, "two: result written\n", 20 <unfinished ...>
+147913 12:47:35.761081 <... close resumed> ) = 0
+147914 12:47:35.761163 <... write resumed> ) = 20
+147913 12:47:35.761189 close(16777856 <unfinished ...>
+147914 12:47:35.761211 write(7, "dsa", 3 <unfinished ...>
+147913 12:47:35.761236 <... close resumed> ) = -1 EBADF (Неправильный дескриптор файла)
+147914 12:47:35.761285 <... write resumed> ) = 3
+147913 12:47:35.761307 write(1, "one: stop\n", 10 <unfinished ...>
+147914 12:47:35.761370 write(7, "\n", 1 <unfinished ...>
+147913 12:47:35.761431 <... write resumed> ) = 10
+147913 12:47:35.761480 exit_group(0 <unfinished ...>
+147914 12:47:35.761506 <... write resumed> ) = 1
+147914 12:47:35.761528 close(7)         = 0
+147914 12:47:35.761564 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660 <unfinished ...>
+147913 12:47:35.761593 <... exit_group resumed>) = ?
+147914 12:47:35.761617 <... openat resumed> ) = 7
+147913 12:47:35.761724 +++ exited with 0 +++
+147914 12:47:35.761751 read(5, "a", 1)  = 1
+147914 12:47:35.761795 close(7)         = 0
+147914 12:47:35.761838 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.761901 read(5, "s", 1)  = 1
+147914 12:47:35.761944 close(7)         = 0
+147914 12:47:35.761988 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.762033 read(5, "d", 1)  = 1
+147914 12:47:35.762071 close(7)         = 0
+147914 12:47:35.762107 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.762148 read(5, "f", 1)  = 1
+147914 12:47:35.762186 close(7)         = 0
+147914 12:47:35.762222 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.762263 read(5, "d", 1)  = 1
+147914 12:47:35.762301 close(7)         = 0
+147914 12:47:35.762337 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.762377 read(5, "\0", 1) = 1
+147914 12:47:35.762415 write(1, "two: string is got\n", 19) = 19
+147914 12:47:35.762534 write(1, "two: result written\n", 20) = 20
+147914 12:47:35.762640 write(7, "dfdsa", 5) = 5
+147914 12:47:35.762685 write(7, "\n", 1) = 1
+147914 12:47:35.762725 close(7)         = 0
+147914 12:47:35.762761 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.762804 read(5, "a", 1)  = 1
+147914 12:47:35.762843 close(7)         = 0
+147914 12:47:35.762878 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.762918 read(5, "s", 1)  = 1
+147914 12:47:35.762956 close(7)         = 0
+147914 12:47:35.762992 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763032 read(5, "a", 1)  = 1
+147914 12:47:35.763070 close(7)         = 0
+147914 12:47:35.763105 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763145 read(5, "a", 1)  = 1
+147914 12:47:35.763183 close(7)         = 0
+147914 12:47:35.763218 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763258 read(5, "a", 1)  = 1
+147914 12:47:35.763296 close(7)         = 0
+147914 12:47:35.763332 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763372 read(5, "a", 1)  = 1
+147914 12:47:35.763410 close(7)         = 0
+147914 12:47:35.763458 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763520 read(5, "a", 1)  = 1
+147914 12:47:35.763618 close(7)         = 0
+147914 12:47:35.763655 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763707 read(5, "a", 1)  = 1
+147914 12:47:35.763747 close(7)         = 0
+147914 12:47:35.763783 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763825 read(5, "a", 1)  = 1
+147914 12:47:35.763863 close(7)         = 0
+147914 12:47:35.763898 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.763938 read(5, "a", 1)  = 1
+147914 12:47:35.763976 close(7)         = 0
+147914 12:47:35.764012 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.764052 read(5, "a", 1)  = 1
+147914 12:47:35.764090 close(7)         = 0
+147914 12:47:35.764125 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.764165 read(5, "\0", 1) = 1
+147914 12:47:35.764203 write(1, "two: string is got\n", 19) = 19
+147914 12:47:35.764318 write(1, "two: result written\n", 20) = 20
+147914 12:47:35.764426 write(7, "aaaaaaaaasa", 11) = 11
+147914 12:47:35.764471 write(7, "\n", 1) = 1
+147914 12:47:35.764512 close(7)         = 0
+147914 12:47:35.764547 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.764590 read(5, "a", 1)  = 1
+147914 12:47:35.764628 close(7)         = 0
+147914 12:47:35.764672 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.764714 read(5, "d", 1)  = 1
+147914 12:47:35.764752 close(7)         = 0
+147914 12:47:35.764787 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.764828 read(5, "s", 1)  = 1
+147914 12:47:35.764866 close(7)         = 0
+147914 12:47:35.764901 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.764941 read(5, "\0", 1) = 1
+147914 12:47:35.764979 write(1, "two: string is got\n", 19) = 19
+147914 12:47:35.765087 write(1, "two: result written\n", 20) = 20
+147914 12:47:35.765194 write(7, "sda", 3) = 3
+147914 12:47:35.765238 write(7, "\n", 1) = 1
+147914 12:47:35.765278 close(7)         = 0
+147914 12:47:35.765313 openat(AT_FDCWD, "file_b ", O_WRONLY|O_CREAT|O_APPEND, 0660) = 7
+147914 12:47:35.765356 read(5, "\1", 1) = 1
+147914 12:47:35.765395 close(5)         = 0
+147914 12:47:35.765431 close(16777856)  = -1 EBADF (Неправильный дескриптор файла)
+147914 12:47:35.765469 write(1, "two: stop\n", 10) = 10
+147914 12:47:35.765594 exit_group(0)    = ?
+147914 12:47:35.765734 +++ exited with 0 +++

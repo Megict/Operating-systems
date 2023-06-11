@@ -1,0 +1,23 @@
+[7690] process detached | 10 <- SEND|GET -> 7
+[7690] 500000 atts to generate 50 rounds | start values are 200 250
+[7689] process detached | 6 <- SEND|GET -> 3
+[7689] 500000 atts to generate 50 rounds | start values are 200 250
+procon-> 2
+<-| initiating process separtion
+[7688] parent process operating, childs:
+[7688] child: [7689] lid: [0]
+[7688] child: [7690] lid: [1]
+<-| testing auxiliary functions| functions capability confirmed
+input number of rounds
+|-> input current round
+|-> input current score
+|-> input number of tries
+|-> sent-> 500000
+sent-> 500000
+--------------------
+got |9150 wins
+--------------------
+got |9181 wins
+--------------------
+total 1st wins: 18331 of 1000000 games
+first wins chance: 0.018331

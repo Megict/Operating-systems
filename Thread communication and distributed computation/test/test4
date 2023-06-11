@@ -1,0 +1,24 @@
+create 1
+freze 10
+exec 1 start
+freze 1000
+exec 1 stop 
+exec 1 time
+create 2
+freze 10
+exec 1 start
+freze 1000
+exec 2 start
+create 3 
+freze 100
+exec 3 start 
+freze 10
+exec 4 stop 
+exec 3 time
+exec 3 time 
+exec 2 time
+freze 2000
+exec 2 stop 
+exec 2 time
+exec 1 time
+freze 100
